@@ -45,7 +45,7 @@
         }
 
         [HttpGet]
-        [Route("doctor/{gender}/{date}/{specialization}")]
+        [Route("doctor/{gender}/{date:datetime}/{specialization}")]
         public async Task<ActionResult<List<DocGenderYearsSpecialization>>> GetDocGenderYearsSpecialization (string gender, DateTime date, string specialization)
         {
             return await doctorRepo.GetByGenderYearsSpecialization(gender, date, specialization);
