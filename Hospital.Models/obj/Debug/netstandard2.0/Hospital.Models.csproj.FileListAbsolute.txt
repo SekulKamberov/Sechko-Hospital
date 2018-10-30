@@ -1,0 +1,12 @@
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\bin\Debug\netstandard2.0\Hospital.Models.deps.json
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\bin\Debug\netstandard2.0\Hospital.Models.dll
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\bin\Debug\netstandard2.0\Hospital.Models.pdb
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\obj\Debug\netstandard2.0\Hospital.Models.csproj.CoreCompileInputs.cache
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\obj\Debug\netstandard2.0\Hospital.Models.AssemblyInfoInputs.cache
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\obj\Debug\netstandard2.0\Hospital.Models.AssemblyInfo.cs
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\obj\Debug\netstandard2.0\Hospital.Models.dll
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\obj\Debug\netstandard2.0\Hospital.Models.pdb
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\obj\Debug\netstandard2.0\Hospital.Models.csprojAssemblyReference.cache
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+C:\Users\Sekul\Desktop\SechkoHospital\Hospital\Hospital.Models\obj\Debug\netstandard2.0\Hospital.Models.csproj.CopyComplete
