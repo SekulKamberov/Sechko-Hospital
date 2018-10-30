@@ -63,7 +63,7 @@
             }
         }
 
-        public async Task<List<DocGenderYearsSpecialization>> GetByGenderYearsSpecialization(string gender, DateTime date, string Specialization )
+        public async Task<List<DocGenderYearsSpecialization>> GetByGenderYearsSpecialization(string gender, DateTime date, string Specialization)
         {
             using (IDbConnection conn = Connection)
             {

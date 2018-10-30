@@ -31,7 +31,7 @@
         }
 
         [HttpGet]
-        [Route("dob/{dob}")]
+        [Route("dob/{dob:datetime}")]
         public async Task<ActionResult<List<DoctorsYoungerThen>>> DoctorsYoungerThen(DateTime dob)
         {
             return await doctorRepo.GetByDob(dob);

@@ -85,21 +85,6 @@
                 return patient.FirstOrDefault(); 
             }
         }
-
-
-        //public IEnumerable<T> ConnectDB(string allPatientDays, T Model)
-        //{
-      
-        //        Connection.Open();
-        //        var patient = Connection.QueryAsync<T>(allPatientDays);
-        //        return patient;
-           
-        //}
-
-        //public async Task<List<PatientsMale>> PatientsMale()
-        //{
-        //    var opa = this.ConnectDB("allPatientDays", PatientsMale model);
-        //}
     }
 }
 

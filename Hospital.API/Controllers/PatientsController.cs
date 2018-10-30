@@ -24,22 +24,21 @@
         }
 
         [HttpGet]
-        [Route("{id}")]
+        [Route("{id:int:min(1)}")]
         public async Task<ActionResult<Patient>> GetByID(int id)
         {
             return await patientRepo.GetByID(id);
         }
         
-        //https://localhost:44383/api/patients/admitDate/2004-02-05
         [HttpGet]
-        [Route("admitDate/{admitDate}")]
+        [Route("admitDate/{admitDate:datetime}")]
         public async Task<ActionResult<List<Patient>>> GetByAdmit(DateTime admitDate)
         {
             return await patientRepo.GetByDateOfBirth(admitDate);
         }
 
         [HttpGet]
-        [Route("releasePatient/{id}")]
+        [Route("releasePatient/{id:int:min(1)}")]
         public async Task<ActionResult<List<ReleasePatient>>> ReleasePatient(int id)
         {
             return await patientRepo.ReleasePatient(id);

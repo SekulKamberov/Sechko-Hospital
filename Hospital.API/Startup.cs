@@ -40,7 +40,6 @@
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseMvc();
         }
     }

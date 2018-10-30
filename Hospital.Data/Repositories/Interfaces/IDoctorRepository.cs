@@ -7,7 +7,6 @@
     using Hospital.Models;
     using Hospital.Models.DoctorProcModels;
     using Hospital.Models.ProcModels;
-    using Hospital.Models.ViewModels;
 
     public interface IDoctorRepository
     {
