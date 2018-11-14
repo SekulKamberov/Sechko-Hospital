@@ -48,7 +48,7 @@
             using (IDbConnection conn = Connection)
             {
                 conn.Open();
-                var result = await conn.QueryAsync<DoctorsYoungerThen>("usp_DoctorsYoungerThen", new { dob = @dob }, commandType: CommandType.StoredProcedure);
+                var result = await conn.QueryAsync<DoctorsYoungerThen>(Constants.USP_DoctorsYoungerThen, new { dob = @dob }, commandType: CommandType.StoredProcedure);
                 return result.ToList();
             }
         }
@@ -58,7 +58,7 @@
             using (IDbConnection conn = Connection)
             {
                 conn.Open();
-                var result = await conn.QueryAsync<DocsGender>("usp_DoctorsByGender", new { gender = @gender }, commandType: CommandType.StoredProcedure);
+                var result = await conn.QueryAsync<DocsGender>(Constants.USP_DoctorsByGender, new { gender = @gender }, commandType: CommandType.StoredProcedure);
                 return result.ToList();
             }
         }
@@ -68,7 +68,8 @@
             using (IDbConnection conn = Connection)
             {
                 conn.Open();
-                var result = await conn.QueryAsync<DocGenderYearsSpecialization>("usp_DocGenderYearsSpecialization", new { gender = @gender, Dob = @date, Specialization = @Specialization }, commandType: CommandType.StoredProcedure);
+                var result = await conn
+                    .QueryAsync<DocGenderYearsSpecialization>(Constants.USP_DocGenderYearsSpecialization, new { gender = @gender, Dob = @date, Specialization = @Specialization }, commandType: CommandType.StoredProcedure);
                 return result.ToList();
             }
         }

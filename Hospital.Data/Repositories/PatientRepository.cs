@@ -12,7 +12,7 @@
     using Dapper;
     using Hospital.Models;
     using Hospital.Data.Repositories.Interfaces;
-    using Hospital.Models.ViewModels;
+ 
     using Hospital.Models.ProcModels;
     using Hospital.Models.PatientProcModels;
 
@@ -60,7 +60,7 @@
             using (IDbConnection conn = Connection)
             {
                 conn.Open();
-                var patient = await conn.QueryAsync<ReleasePatient>("releasePatient", new { patientID = patientID }, commandType: CommandType.StoredProcedure);
+                var patient = await conn.QueryAsync<ReleasePatient>(Constants.ReleasePatient, new { patientID = patientID }, commandType: CommandType.StoredProcedure);
                 return patient.ToList(); 
             }
         }
@@ -71,7 +71,7 @@
             using (IDbConnection conn = Connection)
             {
                 conn.Open();
-                var result = await conn.QueryAsync<PatientsGender>("usp_PatientsByGender", new { gender = @gender }, commandType: CommandType.StoredProcedure);
+                var result = await conn.QueryAsync<PatientsGender>(Constants.USP_PatientsByGender, new { gender = @gender }, commandType: CommandType.StoredProcedure);
                 return result.ToList();
             }
         }
@@ -81,7 +81,7 @@
             using (IDbConnection conn = Connection)
             {
                 conn.Open();
-                var patient = await conn.QueryAsync<int>("allPatientDays");
+                var patient = await conn.QueryAsync<int>(Constants.AllPatientDays);
                 return patient.FirstOrDefault(); 
             }
         }
