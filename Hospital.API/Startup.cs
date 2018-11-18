@@ -41,6 +41,7 @@
                 app.UseDeveloperExceptionPage();
             }
             app.UseMvc();
+            
         }
     }
 }
