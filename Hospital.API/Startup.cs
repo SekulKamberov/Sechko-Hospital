@@ -31,7 +31,10 @@
             services.AddTransient<IDoctorRepository, DoctorRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddRouting(routing => routing.LowercaseUrls = true);
-            services.AddMvc();
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
